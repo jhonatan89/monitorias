@@ -1,0 +1,38 @@
+<div class='card-container'>
+	<div class="card" *ngFor="let item of criterias">                   
+		<div class="card-body">
+			<h5 class="card-title">{{item.name}}</h5>                        
+			<p class="card-btn" *ngIf="!isOnlyRead">
+				<a [routerLink]="['../edit', item.id]" class="btn btn-md" role="button">
+					<span class="oi oi-pencil button-edit">
+					</span>
+				</a>
+				<a (click)="confirmDelete(item.id)" class="btn btn-md" role="button">
+					<span class="oi oi-trash button-delete">
+					</span>
+				</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="no-items" *ngIf="!criterias || criterias.length == 0 ">
+	<div class="center-img-text" *ngIf="!isFetchFinish">
+		<mat-progress-spinner [color]="'accent'" [mode]="'indeterminate'" [diameter]=200></mat-progress-spinner>
+	</div>
+	<div class="center-img-text" *ngIf="isFetchFinish">
+		<h2><span class="oi oi-magnifying-glass"></span> {{ 'noResults' | translate}}</h2>
+	</div>  
+</div>
+
+<div *ngIf="totalRecords > 0" class="center-pagination">
+	<academia-pagination  [fullPaginator]=true [collectionSize]="totalRecords" [pageSize]="pageSize" [page]="page" (pageChanged)="pageChanged($event)"></academia-pagination>
+</div>
+
+
+
+
+
+
+
+

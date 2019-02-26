@@ -1,0 +1,46 @@
+/* Styles Mobile First*/
+@import "theme";
+
+
+.grid-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "list"
+    "detail";
+}
+
+.list{
+    grid-area: list;
+
+}
+
+.align-item{
+    padding-left: 50px;
+    padding-top: 25px;
+    padding-right: 20px;
+}
+
+.component-router{
+    padding-top: 20px;
+}
+
+.detail{
+    grid-area: detail;
+}
+
+
+@media (min-width: 600px){
+
+    .list{
+        grid-area: list;
+        padding: 10px;
+    }
+    
+    
+    .detail{
+        grid-area: detail;
+        padding: 10px;
+    }
+
+}

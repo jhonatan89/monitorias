@@ -1,0 +1,16 @@
+
+<div class="align-item">
+	<div *ngIf="!showDetail">
+		<button type="button" class="btn btn-default" (click)="criteriaSelected=undefined" routerLink="./create">
+			<span class="oi oi-plus"></span> {{'create' | translate}}
+		</button>
+	</div>
+	<div *ngIf="showDetail">
+		<button type="button" class="btn btn-default" (click)="criteriaSelected=undefined" routerLink="./list">
+			<span class="oi oi-arrow-left"></span> {{'back' | translate}}
+		</button>
+	</div>
+	<div class="component-router">
+		<router-outlet></router-outlet>
+	</div>
+</div>

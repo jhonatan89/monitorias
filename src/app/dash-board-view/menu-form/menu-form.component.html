@@ -1,0 +1,17 @@
+
+<div class="container">
+	<h4>{{ 'MenuForm' | translate }}</h4>
+	<form [formGroup]="formGroup" (ngSubmit)="saveModel(menuFilterModel)">
+		<div class="form-group">
+			<label for="form-name">Name</label>
+			<input type="text" class="form-control" [(ngModel)]="menuFilterModel.name" id="form-name" name="name" placeholder="Name" formControlName="nameCtrl" >
+			</div>
+			<div class="form-group">
+				<mat-slide-toggle formControlName="isActiveCtrl" [color]="primary" [(ngModel)]="menuFilterModel.isActive" >IsActive</mat-slide-toggle>
+			</div>
+			<div class="form-buttons"> 
+				<button type="submit" class="btn btn-default" (click)="cleanFields()" >{{'clean' | translate}}</button>
+				<button type="submit" class="btn btn-primary" [disabled]="!formGroup.valid">{{'apply' | translate}}</button>
+			</div>
+		</form>
+	</div>

@@ -1,0 +1,19 @@
+
+<div class="grid-container">
+  
+  	<h3 *ngIf="criteriaFromParent; else createTitle">{{'edit' | translate}}</h3>
+  	<ng-template #createTitle><h3>{{'create' | translate}}</h3></ng-template>
+	<form [formGroup]="formGroupStep1" (ngSubmit)="saveCriteria(criteria)">
+	 
+		<div class="form-group">
+			<label for="form-name">Name</label>
+			<input type="text" class="form-control" [(ngModel)]="criteria.name" id="form-name" name="name" placeholder="Name" formControlName="nameCtrl" required>
+ 		</div>
+	 
+
+    
+	    <div align="center">
+	    	<button type="submit" class="btn btn-primary btn-lg" [disabled]="!formGroupStep1.valid">{{'save' | translate}}</button>
+<button *ngIf="this.isEditForm" type="button" class="btn btn-default" (click)="goBack()">{{'cancel' | translate}}</button>	    </div>
+	</form>
+</div>

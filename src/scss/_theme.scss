@@ -1,0 +1,129 @@
+@import 'functions';
+@import 'variables';
+
+//Colors
+$yellow: #ffff20;
+$red: #dc3545;
+$green: #18bb3e;
+$purple: #536dfe;
+$orange: #fda02f;
+$white: #ffffff;
+$white-100: #ddd;
+$black: #000000;
+$blue: #007bff;
+$bound: #e8e8e8;
+$gray-50: #fbfbfb;
+$gray-100: #f5f5f5;
+$gray-200: #e9ecef;
+$gray-250: #f3f3f3;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$cyan: #17a2b8;
+
+$grays: (50: $gray-50, 100: $gray-100, 200: $gray-200, 300: $gray-300, 400: $gray-400, 500: $gray-500, 600: $gray-600, 700: $gray-700, 800: $gray-800, 900: $gray-900);
+$theme-colors: (primary: $yellow, secondary: $gray-600, success: $green, info: $purple, warning: $orange, danger: $red, light: $gray-100, dark: $black, default: $gray-300);
+$colors: (blue: $blue, purple: $purple, red: $red, orange: $orange, yellow: $yellow, green: $green, cyan: $cyan, white: $white, gray: $gray-600,gray-dark: $gray-800);
+
+
+// Links
+$link-color: theme-color('info');
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
+
+
+
+//Components
+$line-height-lg: 1.5;
+$line-height-sm: 1.5;
+$border-width: 1px;
+$border-radius: 0.25rem;
+$border-radius-lg: 0.3rem;
+$border-radius-sm: 0.2rem;
+$component-active-color: $white;
+$component-active-bg: theme-color('info');
+$caret-width: 0.3em;
+$transition-base: all 0.2s ease-in-out;
+$transition-fade: opacity 0.15s linear;
+$transition-collapse: height 0.35s ease;
+
+
+
+
+//Pagination
+$pagination-color: $black;
+$pagination-bg: $white;
+$pagination-border-color: $white-100;
+$pagination-hover-bg: $gray-600;
+$pagination-hover-border-color: $white-100;
+$pagination-hover-color: $white-100;
+$pagination-active-color: $white;
+$pagination-active-bg: theme-color('dark');
+$pagination-active-border-color: theme-color('dark');
+$pagination-disabled-color: $gray-200;
+$pagination-disabled-bg: $white;
+$pagination-disabled-border-color: $white-100;
+
+// Dropdown
+$dropdown-min-width: 10rem;
+$dropdown-padding-y: 0.5rem;
+$dropdown-spacer: 0.125rem;
+$dropdown-bg: $white;
+$dropdown-border-color: rgba($black, 0.15);
+$dropdown-divider-bg: $gray-200;
+$dropdown-box-shadow: 0 0.5rem 1rem rgba($black, 0.175);
+$dropdown-link-color: $gray-900;
+$dropdown-link-hover-color: darken($gray-900, 5%);
+$dropdown-link-hover-bg: $gray-100;
+$dropdown-link-disabled-color: $gray-600;
+$dropdown-item-padding-y: 0.25rem;
+$dropdown-item-padding-x: 1.5rem;
+$dropdown-header-color: $gray-600;
+$dropdown-link-active-color: $black;
+$dropdown-link-active-bg: lighten(theme-color('primary'), 10%);
+
+.button-edit{
+    color: $black;
+}
+
+
+.button-edit:hover{
+    color: lightgray;
+}
+
+.button-delete:hover{
+    color: red;
+}
+
+.ng-invalid:not(form)  {
+    border-left: 5px solid theme-color('danger'); /* red */
+}
+
+.ng-valid[required], .ng-valid.required  {
+    border-left: 5px solid theme-color('success'); /* green */
+}
+  
+
+.swal2-popup{
+    border-radius: 0 !important;
+}
+
+.swal2-popup .swal2-styled.swal2-confirm{
+    border: 0 !important;
+    background-color: $yellow !important;
+    font-weight: normal !important;
+    color: #000 !important;
+}
+
+.swal2-popup .swal2-styled.swal2-cancel{
+    border: 0 !important;
+    background-color: $white-100 !important;
+    font-weight: normal !important;
+    color: #000 !important;
+}
+

@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+	<!-- Brand -->
+	<div class="navbar-brand" href="#">
+		<i class="material-icons">
+			settings
+		</i>
+		{{'Monitorias'|translate}}
+	</div>
+	
+	
+	<!-- Navbar links -->
+	<div class="collapsednv">
+		<ul class="navbar-nav">
+			<li (click)="onDashBoardViewClick()" [class]="'nav-item '+ (dashBoardViewisActive?'active': '')">
+				{{'dashBoardView'|translate}}
+			</li>
+		</ul>
+		<div class="right-nav">
+			<app-i18n></app-i18n>
+		</div>
+	</div>
+</nav>

@@ -1,0 +1,21 @@
+@import "theme";
+
+.container {
+    min-height: 400px;
+    border-bottom: 1px solid;
+    border-bottom-color: $gray-400;
+    padding: 15px;
+}
+.form-buttons{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.form-buttons button{
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-left:4px;
+    margin-right:4px;
+
+}
