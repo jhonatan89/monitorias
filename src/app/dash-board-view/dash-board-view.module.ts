@@ -6,24 +6,17 @@ import { DashBoardViewComponent } from './dash-board-view.component';
 import {  CriteriaComponent  } from './';
 import { CriteriaListComponent, CriteriaDetailComponent, CriteriaService, LocatorCriteriaService } from './criteria';
 import { MenuFormComponent, MenuFormService } from './menu-form';
-
-
-
-	
-
-
 import { SharedModule } from '../shared/shared.module';
+import { DateOutlineComponent } from './criteria/date-outline/date-outline.component';
 
 export const routes: Routes = [
   {path: '', redirectTo: 'criteria/list', pathMatch: 'full' },
   
   {path: 'criteria', component:CriteriaComponent, children:[
 	  {path:'list', component:CriteriaListComponent},
-	  {path:'edit/:id', component:CriteriaDetailComponent},
-	  {path:'create', component:CriteriaDetailComponent}]
+    {path:'criteriadet', component:CriteriaDetailComponent},
+    ]
   },
-  
-  
 ]
 
 @NgModule({
@@ -39,11 +32,11 @@ export const routes: Routes = [
 
   ], 
   declarations: [
-	DashBoardViewComponent, 
- 
+	DashBoardViewComponent, DateOutlineComponent,
 	CriteriaComponent,CriteriaListComponent, CriteriaDetailComponent 
 ,
-	MenuFormComponent
+	MenuFormComponent,
+	DateOutlineComponent
 ],
   providers: [ 
 	CriteriaService, LocatorCriteriaService ,

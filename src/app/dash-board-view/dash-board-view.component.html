@@ -1,21 +1,22 @@
-<div class="container-grid collapsed">
-	<div class="filter-container collapsed" *ngIf="!hiddenFilter">
+<div class="container-grid">
+	<div class="filter-container">
 		<div class="side-content">
 			<div class="side-forms"> 
 				<menu-form-search-filter></menu-form-search-filter>
 			</div>
 		</div>
-		<div class="collapser">                  
+		<!-- <div class="collapser">                  
 			<button class="btn btn-light button-vertical" (click)="sidebarToggle(); isLeftIcon = !isLeftIcon;">
 				<span *ngIf="isLeftIcon; else isRightIcon " class="oi oi-caret-left"></span>
 				<ng-template #isRightIcon>
 					<span class="oi oi-caret-right"></span>
 				</ng-template>
 			</button>                    
-		</div>
+		</div> -->
 	</div>
 	<div class="list-container-grid">
 		<div>
-			<router-outlet></router-outlet>        </div>
+			<router-outlet></router-outlet>       
+		 </div>
 	</div>   
 </div>

@@ -20,8 +20,8 @@ export class DashBoardViewComponent implements OnInit{
   
   
   sidebarToggle(){
-    document.getElementsByClassName('filter-container')[0].classList.toggle('collapsed');
-    document.getElementsByClassName('container-grid')[0].classList.toggle('collapsed');
+    //document.getElementsByClassName('filter-container')[0].classList.toggle('collapsed');
+    //document.getElementsByClassName('container-grid')[0].classList.toggle('collapsed');
   }
     
   collapseForm(state: boolean){

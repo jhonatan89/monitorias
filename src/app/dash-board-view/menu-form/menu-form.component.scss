@@ -4,8 +4,8 @@
     min-height: 400px;
     border-bottom: 1px solid;
     border-bottom-color: $gray-400;
-    padding: 15px;
 }
+
 .form-buttons{
     display:flex;
     align-items: center;
@@ -17,5 +17,88 @@
     margin-bottom:15px;
     margin-left:4px;
     margin-right:4px;
+}
 
+.img-icon{
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-left: 65.44px;
+    margin-top: 60.9px;
+    place-content: center;
+    width: 89.61px;
+    height: 89.63px;
+}
+
+.user-name{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+.role{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.login-info{
+    display: flex;
+    align-items: center;
+    background-color: rgba(188, 184, 197, 0.4);
+    padding: 35px 30px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.user-info {
+    line-height: 18px;
+    padding: 0 15px;
+}
+
+.row{
+    
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+footer{
+    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    bottom: 0;
+}
+
+.side-content{
+    padding: 0px;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sidebar-menu-item {
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    font-family: 'Roboto';
+    font-size: 10px;
+    text-align: center;
+    color: rgba(33, 66, 141, 1);
+    padding: 20px;
+}
+
+i{
+    margin-right: 10px;
 }

@@ -1,11 +1,42 @@
 
-<div class="container">
-	<h4>{{ 'MenuForm' | translate }}</h4>
-	<form [formGroup]="formGroup" (ngSubmit)="saveModel(menuFilterModel)">
-		<div class="form-group">
-			<label for="form-name">Name</label>
-			<input type="text" class="form-control" [(ngModel)]="menuFilterModel.name" id="form-name" name="name" placeholder="Name" formControlName="nameCtrl" >
+<div class="sidebar-container">
+	<div class="login-info">
+		<img src="./assets/img/usericon.svg">
+		<div class="user-info">
+			<div class="user-name">
+				<p>Juan Camilo Hernandez</p>
 			</div>
+			<div class="role">
+				<p>COORDINADOR</p>
+			</div>
+		</div>
+		<div>
+
+		</div>
+	</div>
+	<div class="sidebar-menu">
+		<a class="sidebar-menu-item" href="">
+			<i class="material-icons"> home </i> Inicio
+		</a>
+		<a href="">
+			<div class="sidebar-menu-item">
+				<i class="material-icons"> folder_shared </i> Informaci&oacute;n personal
+			</div>
+		</a>
+		<a href="">
+			<div class="sidebar-menu-item">
+				<i class="material-icons"> priority_high </i> Criterios
+			</div>
+		</a>
+		<a href="">
+			<div class="sidebar-menu-item">
+				<i class="material-icons"> folder_open </i> Informes
+			</div>
+		</a>
+		<!--<label for="form-name">Name</label>
+		<input type="text" class="form-control" [(ngModel)]="menuFilterModel.name" id="form-name" name="name" placeholder="Name" formControlName="nameCtrl" >-->
+	</div>
+			<!--
 			<div class="form-group">
 				<mat-slide-toggle formControlName="isActiveCtrl" [color]="primary" [(ngModel)]="menuFilterModel.isActive" >IsActive</mat-slide-toggle>
 			</div>
@@ -13,5 +44,12 @@
 				<button type="submit" class="btn btn-default" (click)="cleanFields()" >{{'clean' | translate}}</button>
 				<button type="submit" class="btn btn-primary" [disabled]="!formGroup.valid">{{'apply' | translate}}</button>
 			</div>
-		</form>
+			-->
+
+	<div class="sidebar-footer">
+		<p>Universidad de los Andes | Vigilada Mineducaci&oacute;n</p>
+		<p>Reconocimiento como universidad: Decreto 1927 del 30 de mayo de 1964.</p>
+		<p>Reconocimiento personería jur&iacute;dica: Resoluci&oacute;n 28 del 23 de febrero de 1964 Minjusticia.</p>
 	</div>
+
+</div>

@@ -14,3 +14,30 @@
         margin: 10px 60px 10px 60px;
     }
 }
+
+.dashboard-header{
+    //align-content: flex-start;
+    text-align: center;
+    width: 100%;
+    font-family: 'Roboto';
+    font-size: medium;
+    text-transform: uppercase;
+    background-color: rgba(188, 184, 197, 0.2);
+    padding: 34px 30px;
+}
+
+.dashboard-criteria-text{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: small;
+}
+
+.card-description{
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: small;
+}
+
+.card-title{
+    border-bottom: 2px solid rgba(87, 193, 177, 1);
+}
